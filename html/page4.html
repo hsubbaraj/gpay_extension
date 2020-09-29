@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../js/jquery-1.9.1.js"></script>
+<script src="../js/popup.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -31,92 +33,59 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="main.html" class="w3-bar-item w3-button w3-wide">GroupPay</a>
+    <a href="main.html" class="w3-bar-item w3-button w3-wide"><img src="../images/logo.jpg" width="24px" height="24px"/></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-right">Housemates</a>
   </div>
 </div>
 
-<div class="w3-container w3-white w3-padding-64">
-  <h3 class="w3-center">Housemates</h3>
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <p class="w3-wide">Hari</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:40%">40%</div>
-      </div>
-      <p class="w3-wide">Nihal</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:30%">30%</div>
-      </div>
-      <p class="w3-wide">Isaac</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:30%">30%</div>
-      </div>
-      <p>
-        <button class="pay w3-button w3-black" type="submit">
-          PAY
-        </button>
-      </p>
-      <p>
-        <button class="w3-button w3-light-grey" type="submit">
-          Adjust Group Settings
-        </button>
-      </p>
-    </div>
+<div class="w3-container w3-center w3-white" style="padding:64px 1px" id="pricing">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">
+          <div>
+              <img src="../images/hari.jpg" style="border-radius: 50%;" height="24px"/>
+              Hari
+            <span class="w3-right">33%<span>
+          </div>
+          <div class="w3-light-grey w3-round-xlarge" style="height:8px">
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:33%; height:8px"></div>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <div>
+              <img src="../images/nihal.png" style="border-radius: 50%;" height="24px"/>
+              Nihal
+            <span class="w3-right">33%<span>
+          </div>
+          <div class="w3-light-grey w3-round-xlarge" style="height:8px">
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:33%; height:8px"></div>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <div>
+              <img src="../images/p1.jpeg" style="border-radius: 50%;" height="24px" width="24px"/>
+              Isaac
+            <span class="w3-right">33%<span>
+          </div>
+          <div class="w3-light-grey w3-round-xlarge" style="height:8px">
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:33%; height:8px"></div>
+          </div>
+        </li>
+        <li>
+          <button class="w3-button w3-light-grey">Adjust Group Settings</button>
+          <p></p>
+          <button class="w3-button w3-blue" onclick="sendMessage()">PAY WITH GROUP PAY</button>
+          <p></p>
+        </li>
+      </ul>
+</div>
+<div class="w3-bottom">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/home.png" /></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/search.png" /></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/groups.png" /></a>
   </div>
 </div>
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
-
  
-<script>
-// Modal Image Gallery
-
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
 
 </body>
 </html>

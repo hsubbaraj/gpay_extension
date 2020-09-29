@@ -31,79 +31,49 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">GroupPay</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="../images/logo.jpg" width="24px" height="24px"/></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-right">GroupPay</a>
   </div>
 </div>
 
 <!-- Pricing Section -->
-<div class="w3-container w3-center w3-light-grey" style="padding:96px 16px" id="pricing">
-  <div class="w3-row-padding" style="margin-top:10px">
-    <div class="w3-section">
+<div class="w3-container w3-center w3-white" style="padding:64px 1px" id="pricing">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge">Your Groups</li>
-        <li class="w3-padding-16"><a href="page4.html"><b>Housemates</b></a></li>
-        <li class="w3-padding-16"><b>Berkeley MUN</b> </li>
-        <li class="w3-padding-16"><b>Srinath's Birthday Present</b></li>
-        <li class="w3-light-grey">
-          <button class="w3-button w3-black ">Create New Group</button>
+        <li class="w3-padding-16">
+          <a href="page4.html"><b>Housemates</b></a>
+          <p style="padding:0px; margin:0px">
+          <img src="../images/p2.png" height="10px"  />3
+          <img src="../images/star.png" height="10px"  />30
+          </p>
+        </li>
+        <li class="w3-padding-16"><b>Berkeley MUN</b>
+          <p style="padding:0px; margin:0px">
+          <img src="../images/p2.png" height="10px"  />27
+          <img src="../images/star.png" height="10px"  />10
+          </p>
+        </li>
+        <li class="w3-padding-16"><b>Srinath's Birthday Present</b>
+          <p style="padding:0px; margin:0px">
+          <img src="../images/p2.png" height="10px"  />6
+          <img src="../images/star.png" height="10px"  />0
+          </p>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-light-blue ">Create New Group</button>
         </li>
       </ul>
-    </div>
-  </div>
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+
+<div class="w3-bottom">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/home.png" /></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/search.png" /></a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="width:120px;"><img src="../images/groups.png" /></a>
   </div>
 </div>
-
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
 
 </body>
 </html>

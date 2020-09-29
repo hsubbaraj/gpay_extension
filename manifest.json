@@ -22,8 +22,16 @@
         },
         "default_popup": "html/main.html"
     },
+    "content_scripts": [
+   {
+     "matches": ["https://etsy.com/*"],
+     "js": ["js/jquery-1.9.1.js",
+            "js/myscript.js"]
+   }
+ ],
 
     //additional
+    "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'self'",
     "options_page": "html/options.html",
     "homepage_url": "http://yourdomainhere.com/"
 }
